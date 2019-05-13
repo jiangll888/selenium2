@@ -3,7 +3,6 @@ from base.browser_engine import BrowserEngine
 import unittest
 import ddt
 from config.config_data import ConfigData
-from base.assert_result import assert_result
 import os,time
 from log.log_record import LogRecord
 import multiprocessing

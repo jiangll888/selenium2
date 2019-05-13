@@ -25,4 +25,9 @@ class OperaPics:
         if not isExists:
             os.makedirs(path)
         filename = os.path.join(path + time.strftime("%H_%M_%S") + ".png")
-        obj.driver.save_screenshot(filename)
+        try:
+            obj.driver.save_screenshot(filename)
+            obj.logger.info("截图成功，截图文件为: " + filename)
+            return filename
+        except:
+            obj.logger.error("截图失败")

@@ -1,0 +1,3 @@
+2019-05-11 19:52:05,391 get_element.py get_element 40  INFO --> 元素：qrSmsLogin 已找到,元素信息为<selenium.webdriver.remote.webelement.WebElement (session="a14d94f1fdf7aa7021a22a2228a7e304", element="0.23455148419447247-1")>
+2019-05-11 19:52:05,550 get_element.py get_element 40  INFO --> 元素：imgValidate 已找到,元素信息为<selenium.webdriver.remote.webelement.WebElement (session="a14d94f1fdf7aa7021a22a2228a7e304", element="0.23455148419447247-2")>
+2019-05-11 19:52:06,385 opera_pics.py save_pic 30  INFO --> 截图成功，截图文件为: C:\Users\夏君\PycharmProjects\selenium2\venv\pic\pics\2019_05_11\19_52_05.png

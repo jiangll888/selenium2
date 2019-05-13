@@ -8,9 +8,11 @@ import time
 class UploadPage(KngManagement):
     url = settings.KNG_URL
 
-    def __init__(self,driver):
-        super(UploadPage,self).__init__(driver)
-        self.get_ele = GetElement(driver)
+    def __init__(self,driver,logger):
+        self.logger = logger
+        super(UploadPage,self).__init__(driver,self.logger)
+        self.get_ele = GetElement(driver,self.logger)
+
 
     def get_upload_file_btn(self):
         return self.get_ele.get_element("upload_file_btn","upload_element")
@@ -37,7 +39,7 @@ class UploadPage(KngManagement):
             self.click_element(self.get_submit_file_btn())
             self.switch_window(0)
             if self.check_file(kwargs["file_type"]):
-                s = ShowPage(self.driver)
+                s = ShowPage(self.driver,self.logger)
                 if s.check_encode_status(kwargs["file_type"]):
                     s.delete_download_file(**kwargs)
                     s.download()

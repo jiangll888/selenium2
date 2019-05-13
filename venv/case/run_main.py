@@ -6,13 +6,15 @@ import threading
 from base.count import Count
 from util.send_mail import SendMail
 from config import settings
+from log.log_record import LogRecord
 
 class RunMain:
     _instance_lock = threading.Lock()
 
-    def __init__(self,data):
+    def __init__(self,data,logger):
         self.data = data
         self.get_field()
+        self.logger = logger
 
     def __new__(cls, *args, **kwargs):
         '''
@@ -43,12 +45,12 @@ class RunMain:
         if self.is_run:
             action_list = self.action.split(">")
             page_class = eval(action_list[0])
-            ob = page_class(driver)
+            ob = page_class(driver,self.logger)
             func = getattr(ob, action_list[1])
             res = func(browser_type,**self.request_data)
             expect_method_list = self.expect_method.split(">")  #预期结果先不执行了
             page_class1 = eval(expect_method_list[0])
-            ob1 = page_class1(driver)
+            ob1 = page_class1(driver,self.logger)
             r = ob1.assert_result(self.expect,expect_method_list[1],self.expect_method_params)
             self.write_res(r,browser_type)
             return r
@@ -76,7 +78,7 @@ class RunMain:
         if self.post_action:
             post_action_list = self.post_action.split(">")
             page_class = eval(post_action_list[0])
-            ob = page_class(driver)
+            ob = page_class(driver,self.logger)
             func = getattr(ob, post_action_list[1])
             func()
 

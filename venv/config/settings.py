@@ -1,3 +1,4 @@
+import os
 #URL = "http://www.5itest.cn/register"
 BASE_URL = "http://jgtest.qida.yunxuetang.com.cn/login.htm"
 KNG_URL = "http://jgtest.qida.yunxuetang.com.cn/kng/kngmgmt/kngknowledgemgmt.htm"
@@ -29,7 +30,8 @@ DB_PASSWD = "122901"
 DB_NAME = "testing"
 TABLE_NAME = "`ui_cases`"
 
-AUTOIT3_SCRIPT_PATH = "D:\\atuoit3\\test\\yunxu11.exe"
+# AUTOIT3_SCRIPT_PATH = "D:\\atuoit3\\test\\yunxu11.exe"
+AUTOIT3_SCRIPT_PATH = os.path.join(os.path.dirname(os.getcwd()),"util\\yunxu11.exe")
 DOWNLOAD_PATH = r"C:\Users\夏君\Downloads"
 
 TEST_CASE_SQL = "select * from `ui_cases`;"
@@ -43,5 +45,11 @@ EMAIL_CONTENT = "本次自动化分别在Chrome浏览器、Firefox浏览器、Ed
 EMAIL_SUB = "selenium自动化测试报告   {}"
 EMAIL_RECEIVER = ["jiangliulin@163.com"]
 
+SCORM_COURSE_PROVIDER_NO = "112233"
+SCORM_COURSE_PROVIDER_NAME = "test_scorm"
+HTML_COURSE_NAME = "html_5_7"
+
+PIC_RATIO = 1.5
+CODE_LOC = r"E:/code.png"
 
 

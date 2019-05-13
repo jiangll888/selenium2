@@ -9,9 +9,11 @@ import HTMLTestRunner
 from page.login_page import LoginPage
 from config import settings
 from pic.opera_pics import OperaPics
+from log.log_record import LogRecord
 
 op_db = OperationDB()
 data = op_db.search_all(settings.TEST_CASE_SQL)
+
 
 @ddt.ddt
 class Test(unittest.TestCase):
@@ -24,16 +26,17 @@ class Test(unittest.TestCase):
         cls.driver = BrowserEngine("chrome").start_browser()
         #lo = LoginPage(cls.driver)
         #lo.login(**{"username":"admin","password":11223
+
+
     @ddt.data(*data)
 
-    # @ddt.unpack
-    # def setUp(self,*args,**kwargs):
-    #     print(kwargs)
-
     @ddt.unpack
+    # @unittest.skipIf(**data["is_run"] == 0,"不执行测试")
     def test(self,*args,**kwargs):
+        self.log = LogRecord()
+        self.logger = self.log.log_record(self)
         global r
-        r = RunMain(kwargs)
+        r = RunMain(kwargs,self.logger)
         #res = r.run_main(self.driver,parames)
         self.res = r.run_main(self.driver)
         if self.res != None:
@@ -43,10 +46,11 @@ class Test(unittest.TestCase):
         if r.is_run and self.res:
             r.post_act(self.driver)   #数据清理操作
         OperaPics().save_pic_main(self)
+        self.log.close()
 
     @classmethod
     def tearDownClass(cls):
-        #cls.driver.quit()
+        cls.driver.quit()
         op_db.close()
         r.send_result_mail()
 

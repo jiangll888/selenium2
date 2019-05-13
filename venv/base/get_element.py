@@ -9,11 +9,12 @@ from pic.opera_pics import OperaPics
 from selenium.common.exceptions import TimeoutException
 
 class GetElement:
-    def __init__(self,driver,filename=None):
+    def __init__(self,driver,logger,filename=None):
         self.driver = driver
         self.filename = filename
         self.r = ReadIni(self.filename)
         self.op_pic = OperaPics()
+        self.logger = logger
 
     def get_element_key(self,key,section=None):
         element_key = self.r.get_value(key,section)
@@ -21,7 +22,8 @@ class GetElement:
             element_key_list = element_key.split(">")
         else:
             element_key_list = None
-            print("配置文件中未取到该元素")
+            self.logger.error("配置文件中未取到该元素")
+            #print("配置文件中未取到该元素")
         return element_key_list
 
     def get_element(self,key,section=None,timeout=50,poll=0.5):
@@ -35,8 +37,9 @@ class GetElement:
             else:
                 key_tuple = (By.XPATH,key_list[1])
             element = wait.until(EC.visibility_of_element_located(key_tuple))
+            self.logger.info("元素：{} 已找到,元素信息为{}".format(key_list[1],str(element)))
         except TimeoutException as e:
-            print("元素：{} 未找到".format(key_list[1]))
+            self.logger.warning("元素：{} 未找到".format(key_list[1]))
             self.op_pic.save_pic(self)
             element = None
         return element
@@ -52,9 +55,11 @@ class GetElement:
             else:
                 key_tuple = (By.XPATH, key_list[1])
             res = wait.until_not(EC.visibility_of_element_located(key_tuple))
+            self.logger.info("元素：{} 已消失".format(key_list[1]))
             return res
         except TimeoutException as e:
-            print("元素：{} 还未消失".format(key_list[1]))
+            self.logger.warning("元素：{} 还未消失".format(key_list[1]))
+            #print("元素：{} 还未消失".format(key_list[1]))
             self.op_pic.save_pic(self)
             return False
 
