@@ -32,7 +32,7 @@ TABLE_NAME = "`ui_cases`"
 
 # AUTOIT3_SCRIPT_PATH = "D:\\atuoit3\\test\\yunxu11.exe"
 AUTOIT3_SCRIPT_PATH = os.path.join(os.path.dirname(os.getcwd()),"util\\yunxu11.exe")
-DOWNLOAD_PATH = r"C:\Users\夏君\Downloads"
+DOWNLOAD_PATH = r"C:\Users\夏君\Downloads1"
 
 TEST_CASE_SQL = "select * from `ui_cases`;"
 CLEAR_RESULT_SQL = "update `ui_cases` set chrome_result='',firefox_result='',edge_result='';"
