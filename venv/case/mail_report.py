@@ -23,5 +23,4 @@ class MailReport:
 if __name__ == "__main__":
     m = MailReport()
     #print(m.op_db.search_all(settings.RESULT_SQL))
-    #m.send_result_mail(sys.argv[1])
-    m.send_result_mail("tst")
+    m.send_result_mail(sys.argv[1])
