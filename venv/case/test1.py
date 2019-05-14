@@ -1,5 +1,6 @@
 import os,time,sys
 sys.path.append(os.path.abspath(os.path.join(os.getcwd(), "..")))
+sys.path.append(os.path.abspath(os.path.join(os.getcwd(),"..\\Lib\\site-packages")))
 from base.browser_engine import BrowserEngine
 import unittest
 import ddt
