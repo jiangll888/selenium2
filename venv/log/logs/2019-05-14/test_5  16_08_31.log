@@ -1,0 +1,37 @@
+2019-05-14 16:08:31,191 base_page.py open 17  INFO --> 打开http://jgtest.qida.yunxuetang.com.cn/kng/kngmgmt/kngknowledgemgmt.htm
+2019-05-14 16:08:54,417 base_page.py maxsize_window 38  INFO --> 窗口最大化
+2019-05-14 16:08:55,821 get_element.py get_element 40  INFO --> 元素：//span[text()='分享知识'] 已找到,元素信息为<selenium.webdriver.remote.webelement.WebElement (session="4b25bd5cd7a7745bdbfbb03e3db3838e", element="0.9086066962894601-1")>
+2019-05-14 16:08:56,078 base_page.py click_element 53  INFO --> 在<selenium.webdriver.remote.webelement.WebElement (session="4b25bd5cd7a7745bdbfbb03e3db3838e", element="0.9086066962894601-1")>元素处点击成功
+2019-05-14 16:08:56,092 base_page.py switch_window 77  INFO --> 切换window成功
+2019-05-14 16:09:00,418 get_element.py get_element 40  INFO --> 元素：//input[@value='选择上传文件'] 已找到,元素信息为<selenium.webdriver.remote.webelement.WebElement (session="4b25bd5cd7a7745bdbfbb03e3db3838e", element="0.6468274452964975-1")>
+2019-05-14 16:09:02,572 base_page.py click_element 53  INFO --> 在<selenium.webdriver.remote.webelement.WebElement (session="4b25bd5cd7a7745bdbfbb03e3db3838e", element="0.6468274452964975-1")>元素处点击成功
+2019-05-14 16:09:05,587 base_page.py execute_autoit_script 110  INFO --> C:\Users\夏君\PycharmProjects\selenium2\venv\util\yunxu11.exe chrome D:\video_5_7.mp4 脚本执行成功
+2019-05-14 16:09:09,466 get_element.py get_element 40  INFO --> 元素：//span[text()='已上传'] 已找到,元素信息为<selenium.webdriver.remote.webelement.WebElement (session="4b25bd5cd7a7745bdbfbb03e3db3838e", element="0.6468274452964975-2")>
+2019-05-14 16:09:10,547 get_element.py get_element 40  INFO --> 元素：btnSave 已找到,元素信息为<selenium.webdriver.remote.webelement.WebElement (session="4b25bd5cd7a7745bdbfbb03e3db3838e", element="0.6468274452964975-3")>
+2019-05-14 16:09:12,788 base_page.py click_element 53  INFO --> 在<selenium.webdriver.remote.webelement.WebElement (session="4b25bd5cd7a7745bdbfbb03e3db3838e", element="0.6468274452964975-3")>元素处点击成功
+2019-05-14 16:09:12,796 base_page.py switch_window 77  INFO --> 切换window成功
+2019-05-14 16:09:12,943 get_element.py get_element 40  INFO --> 元素：//a[contains(text(),"video_5_7")] 已找到,元素信息为<selenium.webdriver.remote.webelement.WebElement (session="4b25bd5cd7a7745bdbfbb03e3db3838e", element="0.9086066962894601-2")>
+2019-05-14 16:09:15,657 get_element.py wait_element_disappear 58  INFO --> 元素：dealingMsg-main-msg 已消失
+2019-05-14 16:09:15,705 get_element.py get_element 40  INFO --> 元素：//a[contains(text(),"video_5_7")] 已找到,元素信息为<selenium.webdriver.remote.webelement.WebElement (session="4b25bd5cd7a7745bdbfbb03e3db3838e", element="0.9086066962894601-4")>
+2019-05-14 16:09:15,952 base_page.py click_element 53  INFO --> 在<selenium.webdriver.remote.webelement.WebElement (session="4b25bd5cd7a7745bdbfbb03e3db3838e", element="0.9086066962894601-4")>元素处点击成功
+2019-05-14 16:09:15,960 base_page.py switch_window 77  INFO --> 切换window成功
+2019-05-14 16:10:06,331 get_element.py wait_element_disappear 61  WARNING --> 元素：//span[text()='视频正在转换中....'] 还未消失
+2019-05-14 16:10:06,730 opera_pics.py save_pic 30  INFO --> 截图成功，截图文件为: C:\Users\夏君\PycharmProjects\selenium2\venv\pic\pics\2019_05_14\16_10_06.png
+2019-05-14 16:10:06,730 base_page.py refresh 22  INFO --> 刷新页面
+2019-05-14 16:10:09,655 get_element.py wait_element_disappear 58  INFO --> 元素：//span[text()='视频正在转换中....'] 已消失
+2019-05-14 16:10:09,715 get_element.py get_element 40  INFO --> 元素：vjs_video_3_html5_api 已找到,元素信息为<selenium.webdriver.remote.webelement.WebElement (session="4b25bd5cd7a7745bdbfbb03e3db3838e", element="0.9742478704792528-1")>
+2019-05-14 16:10:09,715 show_page.py check_video_encode_status 100  INFO --> 视频转换成功
+2019-05-14 16:10:09,900 opera_file.py check_file_status 40  INFO --> C:\Users\夏君\Downloads\video_5_7.mp4 文件已找到
+2019-05-14 16:10:09,901 opera_file.py delete_file 59  INFO --> C:\Users\夏君\Downloads\video_5_7.mp4 文件已删除
+2019-05-14 16:10:09,930 get_element.py get_element 40  INFO --> 元素：//span[@class='el-icon-download'] 已找到,元素信息为<selenium.webdriver.remote.webelement.WebElement (session="4b25bd5cd7a7745bdbfbb03e3db3838e", element="0.9742478704792528-2")>
+2019-05-14 16:10:10,024 base_page.py click_element 53  INFO --> 在<selenium.webdriver.remote.webelement.WebElement (session="4b25bd5cd7a7745bdbfbb03e3db3838e", element="0.9742478704792528-2")>元素处点击成功
+2019-05-14 16:10:10,024 base_page.py close 26  INFO --> 关闭当前页面
+2019-05-14 16:10:10,058 base_page.py switch_window 77  INFO --> 切换window成功
+2019-05-14 16:10:10,091 opera_file.py check_file_status 43  WARNING --> C:\Users\夏君\Downloads\video_5_7.mp4 文件不存在
+2019-05-14 16:10:20,103 opera_file.py check_file_status 40  INFO --> C:\Users\夏君\Downloads\video_5_7.mp4 文件已找到
+2019-05-14 16:10:20,151 get_element.py get_element 40  INFO --> 元素：repKnowledgeCatalog_ctl00_lkBtnEdit 已找到,元素信息为<selenium.webdriver.remote.webelement.WebElement (session="4b25bd5cd7a7745bdbfbb03e3db3838e", element="0.9086066962894601-5")>
+2019-05-14 16:10:20,176 base_page.py move_to_target 102  INFO --> 在<selenium.webdriver.remote.webelement.WebElement (session="4b25bd5cd7a7745bdbfbb03e3db3838e", element="0.9086066962894601-5")>处鼠标悬停成功
+2019-05-14 16:10:20,229 get_element.py get_element 40  INFO --> 元素：repKnowledgeCatalog_ctl00_lbtnDelete 已找到,元素信息为<selenium.webdriver.remote.webelement.WebElement (session="4b25bd5cd7a7745bdbfbb03e3db3838e", element="0.9086066962894601-6")>
+2019-05-14 16:10:20,321 base_page.py click_element 53  INFO --> 在<selenium.webdriver.remote.webelement.WebElement (session="4b25bd5cd7a7745bdbfbb03e3db3838e", element="0.9086066962894601-6")>元素处点击成功
+2019-05-14 16:10:20,323 base_page.py switch_alert 85  INFO --> 切换alert成功
+2019-05-14 16:10:25,042 get_element.py wait_element_disappear 58  INFO --> 元素：dealingMsg-main-msg 已消失

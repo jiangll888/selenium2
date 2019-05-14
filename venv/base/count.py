@@ -9,17 +9,17 @@ class Count:
         self.edge_result = self.get_edge_result()
 
     def get_chrome_result(self):
-        chrome_result = self.op_db.search_all("select " + settings.CHROME_RESULT + " from `ui_cases`;")
+        chrome_result = self.op_db.search_all(settings.GET_CHROME_RESULT)
         res = [r[settings.CHROME_RESULT] for r in chrome_result]
         return res
 
     def get_firefox_result(self):
-        firefox_result = self.op_db.search_all("select " + settings.FIREFOX_RESULT + " from `ui_cases`;")
+        firefox_result = self.op_db.search_all(settings.GET_FIREFOX_RESULT)
         res = [r[settings.FIREFOX_RESULT] for r in firefox_result]
         return res
 
     def get_edge_result(self):
-        edge_result = self.op_db.search_all("select " + settings.EDGE_RESULT + " from `ui_cases`;")
+        edge_result = self.op_db.search_all(settings.GET_EDGE_RESULT)
         res = [r[settings.EDGE_RESULT] for r in edge_result]
         return res
 
@@ -45,5 +45,6 @@ class Count:
 
 if __name__ == "__main__":
     d = Count()
-    r = d.get_result()
+    print(d.op_db.search_all("select " + settings.CHROME_RESULT + " from `ui_cases`;"))
+    r = d.get_chrome_result()
     print(r)

@@ -3,7 +3,6 @@ from case import *
 import json
 import time
 import threading
-from base.count import Count
 from util.send_mail import SendMail
 from config import settings
 from log.log_record import LogRecord
@@ -58,11 +57,11 @@ class RunMain:
     def write_res(self,res,browser_type):
         dc = DataConfig(self.data)
         if browser_type == "chrome":
-            sql = "update ui_cases set chrome_result=%s where case_id=%s;"
+            sql = settings.UPDATE_CHROME_RESULT_SQL
         elif browser_type == "firefox":
-            sql = "update ui_cases set firefox_result=%s where case_id=%s;"
+            sql = settings.UPDATE_FIREFOX_RESULT_SQL
         else:
-            sql = "update ui_cases set edge_result=%s where case_id=%s;"
+            sql = settings.UPDATE_EDGE_RESULT_SQL
 
         if res:
             para = ("pass", self.case_id)
@@ -82,15 +81,6 @@ class RunMain:
             func = getattr(ob, post_action_list[1])
             func()
 
-    def send_result_mail(self):
-        c = Count()
-        count_tuple = c.get_result()
-        count = str(int(count_tuple[0]) + int(count_tuple[1]))
-        content = settings.EMAIL_CONTENT.format(count,count_tuple[0],count_tuple[1],count_tuple[2],count_tuple[3],
-                                                count_tuple[4],count_tuple[5])
-        s = SendMail()
-        sub = settings.EMAIL_SUB.format(time.strftime("%Y-%m-%d %H:%M:%S"))
-        s.send_mail(settings.EMAIL_RECEIVER,sub,content)
 
 
 

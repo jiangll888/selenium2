@@ -55,7 +55,6 @@ class Test(unittest.TestCase):
     def tearDownClass(cls):
         cls.driver.quit()
         op_db.close()
-        r.send_result_mail()
 
 def get_suite(i):
     global parames
@@ -66,7 +65,6 @@ def get_suite(i):
     else:
         parames = "edge"
     suite = unittest.TestLoader().loadTestsFromTestCase(Test)
-    #unittest.TextTestRunner().run(suite)
     filename = "../report/" + parames + "/" + time.strftime("%Y-%m-%d %H-%M-%S") + ".html"
     with open(filename, "wb") as fp:
         HTMLTestRunner.HTMLTestRunner(stream=fp, verbosity=2, title="selenium_test_report", description="test").run(

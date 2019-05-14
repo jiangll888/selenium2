@@ -1,0 +1,35 @@
+2019-05-14 16:10:25,054 base_page.py open 17  INFO --> 打开http://jgtest.qida.yunxuetang.com.cn/kng/kngmgmt/kngknowledgemgmt.htm
+2019-05-14 16:10:32,041 base_page.py maxsize_window 38  INFO --> 窗口最大化
+2019-05-14 16:10:32,513 get_element.py get_element 40  INFO --> 元素：//span[text()='分享知识'] 已找到,元素信息为<selenium.webdriver.remote.webelement.WebElement (session="4b25bd5cd7a7745bdbfbb03e3db3838e", element="0.8342551120887649-1")>
+2019-05-14 16:10:32,723 base_page.py click_element 53  INFO --> 在<selenium.webdriver.remote.webelement.WebElement (session="4b25bd5cd7a7745bdbfbb03e3db3838e", element="0.8342551120887649-1")>元素处点击成功
+2019-05-14 16:10:32,734 base_page.py switch_window 77  INFO --> 切换window成功
+2019-05-14 16:10:34,477 get_element.py get_element 40  INFO --> 元素：//input[@value='选择上传文件'] 已找到,元素信息为<selenium.webdriver.remote.webelement.WebElement (session="4b25bd5cd7a7745bdbfbb03e3db3838e", element="0.24032953612432806-1")>
+2019-05-14 16:10:36,528 base_page.py click_element 53  INFO --> 在<selenium.webdriver.remote.webelement.WebElement (session="4b25bd5cd7a7745bdbfbb03e3db3838e", element="0.24032953612432806-1")>元素处点击成功
+2019-05-14 16:10:37,470 base_page.py execute_autoit_script 110  INFO --> C:\Users\夏君\PycharmProjects\selenium2\venv\util\yunxu11.exe chrome D:\audio_5_7.mp3 脚本执行成功
+2019-05-14 16:10:40,161 get_element.py get_element 40  INFO --> 元素：//span[text()='已上传'] 已找到,元素信息为<selenium.webdriver.remote.webelement.WebElement (session="4b25bd5cd7a7745bdbfbb03e3db3838e", element="0.24032953612432806-2")>
+2019-05-14 16:10:41,199 get_element.py get_element 40  INFO --> 元素：btnSave 已找到,元素信息为<selenium.webdriver.remote.webelement.WebElement (session="4b25bd5cd7a7745bdbfbb03e3db3838e", element="0.24032953612432806-3")>
+2019-05-14 16:10:41,269 base_page.py click_element 53  INFO --> 在<selenium.webdriver.remote.webelement.WebElement (session="4b25bd5cd7a7745bdbfbb03e3db3838e", element="0.24032953612432806-3")>元素处点击成功
+2019-05-14 16:10:41,293 base_page.py switch_window 77  INFO --> 切换window成功
+2019-05-14 16:10:41,366 get_element.py get_element 40  INFO --> 元素：//a[contains(text(),"audio_5_7")] 已找到,元素信息为<selenium.webdriver.remote.webelement.WebElement (session="4b25bd5cd7a7745bdbfbb03e3db3838e", element="0.8342551120887649-2")>
+2019-05-14 16:10:41,382 get_element.py wait_element_disappear 58  INFO --> 元素：dealingMsg-main-msg 已消失
+2019-05-14 16:10:41,406 get_element.py get_element 40  INFO --> 元素：//a[contains(text(),"audio_5_7")] 已找到,元素信息为<selenium.webdriver.remote.webelement.WebElement (session="4b25bd5cd7a7745bdbfbb03e3db3838e", element="0.8342551120887649-2")>
+2019-05-14 16:10:41,573 base_page.py click_element 53  INFO --> 在<selenium.webdriver.remote.webelement.WebElement (session="4b25bd5cd7a7745bdbfbb03e3db3838e", element="0.8342551120887649-2")>元素处点击成功
+2019-05-14 16:10:41,582 base_page.py switch_window 77  INFO --> 切换window成功
+2019-05-14 16:10:42,879 get_element.py wait_element_disappear 58  INFO --> 元素：//span[text()='音频正在转换中....'] 已消失
+2019-05-14 16:10:42,980 get_element.py get_element 40  INFO --> 元素：playercontainer 已找到,元素信息为<selenium.webdriver.remote.webelement.WebElement (session="4b25bd5cd7a7745bdbfbb03e3db3838e", element="0.5463898925078554-1")>
+2019-05-14 16:10:42,980 show_page.py check_audio_encode_status 118  INFO --> 音频转换成功
+2019-05-14 16:10:43,004 opera_file.py check_file_status 48  INFO --> C:\Users\夏君\Downloads\audio_5_7.mp3 文件已找到
+2019-05-14 16:10:43,006 opera_file.py delete_file 59  INFO --> C:\Users\夏君\Downloads\audio_5_7.mp3 文件已删除
+2019-05-14 16:10:43,108 get_element.py get_element 40  INFO --> 元素：//span[@class='el-icon-download'] 已找到,元素信息为<selenium.webdriver.remote.webelement.WebElement (session="4b25bd5cd7a7745bdbfbb03e3db3838e", element="0.5463898925078554-2")>
+2019-05-14 16:10:43,212 base_page.py click_element 53  INFO --> 在<selenium.webdriver.remote.webelement.WebElement (session="4b25bd5cd7a7745bdbfbb03e3db3838e", element="0.5463898925078554-2")>元素处点击成功
+2019-05-14 16:10:43,212 base_page.py close 26  INFO --> 关闭当前页面
+2019-05-14 16:10:43,319 base_page.py switch_window 77  INFO --> 切换window成功
+2019-05-14 16:10:43,325 opera_file.py check_file_status 51  WARNING --> C:\Users\夏君\Downloads\audio_5_7.mp3 文件不存在
+2019-05-14 16:10:43,325 opera_file.py check_file_status 52  WARNING --> [Errno 2] No such file or directory: 'C:\\Users\\夏君\\Downloads\\audio_5_7.mp3'
+2019-05-14 16:10:53,328 opera_file.py check_file_status 48  INFO --> C:\Users\夏君\Downloads\audio_5_7.mp3 文件已找到
+2019-05-14 16:10:53,391 get_element.py get_element 40  INFO --> 元素：repKnowledgeCatalog_ctl00_lkBtnEdit 已找到,元素信息为<selenium.webdriver.remote.webelement.WebElement (session="4b25bd5cd7a7745bdbfbb03e3db3838e", element="0.8342551120887649-3")>
+2019-05-14 16:10:53,419 base_page.py move_to_target 102  INFO --> 在<selenium.webdriver.remote.webelement.WebElement (session="4b25bd5cd7a7745bdbfbb03e3db3838e", element="0.8342551120887649-3")>处鼠标悬停成功
+2019-05-14 16:10:53,475 get_element.py get_element 40  INFO --> 元素：repKnowledgeCatalog_ctl00_lbtnDelete 已找到,元素信息为<selenium.webdriver.remote.webelement.WebElement (session="4b25bd5cd7a7745bdbfbb03e3db3838e", element="0.8342551120887649-4")>
+2019-05-14 16:10:53,549 base_page.py click_element 53  INFO --> 在<selenium.webdriver.remote.webelement.WebElement (session="4b25bd5cd7a7745bdbfbb03e3db3838e", element="0.8342551120887649-4")>元素处点击成功
+2019-05-14 16:10:53,550 base_page.py switch_alert 85  INFO --> 切换alert成功
+2019-05-14 16:10:57,498 get_element.py wait_element_disappear 58  INFO --> 元素：dealingMsg-main-msg 已消失
