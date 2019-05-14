@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54d346d8-c34a-4fb5-b1ce-7f71f04841d0" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/case/test1.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/case/test1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/config/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="test1.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venv/case/test1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="80" selection-start-line="2" selection-start-column="80" selection-end-line="2" selection-end-column="80" />
+            <state relative-caret-position="59">
+              <caret line="77" column="49" lean-forward="true" selection-start-line="77" selection-start-column="4" selection-end-line="77" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -25,7 +27,7 @@
       <file leaf-file-name="elements.ini" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venv/config/elements.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
+            <state relative-caret-position="23">
               <caret line="9" column="14" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="14" />
             </state>
           </provider>
@@ -34,8 +36,26 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venv/config/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="69">
+              <caret line="24" selection-start-line="24" selection-end-line="30" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config_data.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/config/config_data.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="335">
+              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="run_main.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/venv/case/run_main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="78">
+              <caret line="60" column="55" lean-forward="true" selection-start-line="60" selection-start-column="53" selection-end-line="60" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -98,8 +118,8 @@
         <option value="$PROJECT_DIR$/venv/base/captcha.py" />
         <option value="$PROJECT_DIR$/venv/page/login_page.py" />
         <option value="$PROJECT_DIR$/venv/util/opera_file.py" />
-        <option value="$PROJECT_DIR$/venv/config/settings.py" />
         <option value="$PROJECT_DIR$/venv/case/test1.py" />
+        <option value="$PROJECT_DIR$/venv/config/settings.py" />
       </list>
     </option>
   </component>
@@ -131,20 +151,13 @@
               <item name="selenium2" type="b2602c69:ProjectViewProjectNode" />
               <item name="selenium2" type="462c0819:PsiDirectoryNode" />
               <item name="venv" type="462c0819:PsiDirectoryNode" />
+              <item name="case" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="selenium2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="selenium2" type="462c0819:PsiDirectoryNode" />
+              <item name="venv" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="selenium2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="selenium2" type="462c0819:PsiDirectoryNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-              <item name="Lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="selenium2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="selenium2" type="462c0819:PsiDirectoryNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-              <item name="Lib" type="462c0819:PsiDirectoryNode" />
-              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="selenium2" type="b2602c69:ProjectViewProjectNode" />
@@ -567,13 +580,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/case/run_main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="53" column="25" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/page/login_page.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
@@ -607,13 +613,6 @@
     <entry file="file://$PROJECT_DIR$/venv/log/logs/2019-05-13/test_5  14_32_53.log" />
     <entry file="file://$PROJECT_DIR$/venv/log/logs/2019-05-13/test_5  14_47_51.log" />
     <entry file="file://$PROJECT_DIR$/venv/log/logs/2019-05-13/test_6  14_50_43.log" />
-    <entry file="file://$PROJECT_DIR$/venv/config/elements.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="14" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/pic/opera_pics.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -622,13 +621,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/log/logs/2019-05-13/test_5  15_10_21.log" />
-    <entry file="file://$PROJECT_DIR$/venv/config/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/util/opera_db.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="552">
@@ -636,17 +628,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/config/config_data.py">
+    <entry file="file://$PROJECT_DIR$/venv/case/test1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="38" column="134" selection-end-line="57" />
+        <state relative-caret-position="59">
+          <caret line="77" column="49" lean-forward="true" selection-start-line="77" selection-start-column="4" selection-end-line="77" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/case/test1.py">
+    <entry file="file://$PROJECT_DIR$/venv/config/elements.ini">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="80" selection-start-line="2" selection-start-column="80" selection-end-line="2" selection-end-column="80" />
+        <state relative-caret-position="23">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/config/config_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/config/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="24" selection-start-line="24" selection-end-line="30" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/case/run_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="60" column="55" lean-forward="true" selection-start-line="60" selection-start-column="53" selection-end-line="60" selection-end-column="55" />
         </state>
       </provider>
     </entry>

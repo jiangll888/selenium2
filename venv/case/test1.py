@@ -78,7 +78,7 @@ if __name__ == "__main__":
     filename = time.strftime("%Y-%m-%d %H-%M-%S")
     parames = "chrome"
     BeautifulReport(suite).report(description="发布测试",filename=filename,log_path="../report/" + parames)
-    # for i in range(3):
+    # # for i in range(3):
     #     p = multiprocessing.Process(target=get_suite,args=[i,])
     #     p.start()
     #r.send_result_mail()
