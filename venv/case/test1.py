@@ -1,7 +1,8 @@
+import os,time,sys
+sys.path.append(os.path.abspath(os.path.join(os.getcwd(), "..")))
 from base.browser_engine import BrowserEngine
 import unittest
 import ddt
-import os,time
 import multiprocessing
 from case.run_main import RunMain
 from util.opera_db import OperationDB
@@ -75,7 +76,7 @@ if __name__ == "__main__":
     suite = unittest.TestLoader().loadTestsFromTestCase(Test)
     filename = time.strftime("%Y-%m-%d %H-%M-%S")
     parames = "chrome"
-    BeautifulReport(suite).report(description="发布测试报告",filename=filename,log_path="../report/" + parames)
+    BeautifulReport(suite).report(description="发布测试",filename=filename,log_path="../report/" + parames)
     # for i in range(3):
     #     p = multiprocessing.Process(target=get_suite,args=[i,])
     #     p.start()
